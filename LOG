@@ -1,0 +1,29 @@
+# Commands
+
+# Initialize Project Generates packaje.json 
+npm init -y
+# Install external dependencies
+npm i react react-dom
+# Install webpack to translate react code to code runable by browsers
+npm i webpack webpack-cli -D
+# Create 5 basic configurations on a webpack.config.js file
+# Install Babel to compile jsx to javascript for browsers
+npm i @babel/core @babel/preset-env @babel/preset-react babel-loader -D
+# Help Compilation for polifields
+npm i core-js
+# Compile react code
+npm run build
+# Install wevpack plugins (for clean old compilations)
+npm i clean-webpack-plugin html-webpack-plugin -D
+# Install webpack loader for css scss and images (-D stand for development dependency)
+npm i sass sass-loader style-loader css-loader -D
+# Install packages for development configuration (webpack-merge allows you to have configuration files for production and development)
+npm i webpack-dev-server webpack-merge -D
+# Launch development version
+npm start
+# Install fast refresh module to keep the state even if we update our development site
+npm install -D @pmmmwh/react-refresh-webpack-plugin react-refresh 
+# Split code in Production your code from External libraries
+optimization object on webpack.prod.js
+# Split also css codes
+npm i mini-css-extract-plugin
